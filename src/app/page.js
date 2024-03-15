@@ -28,6 +28,7 @@ import {
   BiLogoCss3,
   BiLogoTailwindCss,
   BiLogoBootstrap,
+  BiLogoCPlusPlus,
 } from "react-icons/bi";
 import {
   SiApachemaven,
@@ -46,6 +47,7 @@ import ecom from "../../public/ecomm.png";
 import movie from "../../public/movie.png";
 import senti from "../../public/senti.png";
 import FlySmart from "../../public/FlySmart2.png";
+import estate from "../../public/real_estate.png";
 // import portfolio from "../../public/Portfolio1.png";
 
 const portfolioStyle = {
@@ -124,7 +126,7 @@ export default function Home() {
               <li>
                 {" "}
                 <a
-                  href="https://drive.google.com/file/d/1EPW6LhYyFN-r77FJaIw_Y88iz2pt5EZ4/view?usp=sharing"
+                  href="https://drive.google.com/file/d/11mo2ZC5zHVQ9aH0qzvn78b-pGiPgb2ID/view?usp=sharing"
                   alt="alt text"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -156,11 +158,11 @@ export default function Home() {
               Full Stack Developer and ML Enthusiast
             </h3>
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 md:text-xl max-w-10xl mx-auto">
-              As an enthusiastic and skilled Full Stack Developer and Machine
-              Learning enthusiast, I hold a degree in Electronics and
-              Telecommunication Engineering. My passion lies in merging
-              front-end and back-end technologies to innovate and craft
-              solutions that create a meaningful impact.
+              As a Full Stack Developer and Machine Learning enthusiast, I aim
+              to blend front-end and back-end technologies to craft meaningful
+              solutions. Proficient in React.js, Vue.js, and Python, with a
+              diverse project background, I seek to foster innovation and
+              contribute positively to the tech community.
             </p>
             {/* flex justify-center flex-col items-center */}
             <div className="text-5xl flex justify-center flex-row items-center text-gray-600 dark:text-gray-400 md:flex md:gap-10 lg:flex lg:gap-10 ">
@@ -209,6 +211,10 @@ export default function Home() {
             <h2 className="text-3xl p-7 dark:text-gray-200">Languages</h2>
             <div className="flex flex-wrap justify-evenly">
               <div className="p-2 text-xl dark:text-gray-200">
+                <BiLogoCPlusPlus className="w-40 h-40 text-cyan-500 md:w-40 md:h-40 lg:w-48 lg:h-48" />
+                C++
+              </div>
+              <div className="p-2 text-xl dark:text-gray-200">
                 <BiLogoPython className="w-40 h-40 text-cyan-500 md:w-40 md:h-40 lg:w-48 lg:h-48" />
                 Python
               </div>
@@ -216,20 +222,12 @@ export default function Home() {
                 <BiLogoJavascript className="w-40 h-40 text-cyan-500 md:w-40 md:h-40 lg:w-48 lg:h-48" />
                 Java script
               </div>
-              <div className="p-2 text-xl dark:text-gray-200">
-                <BiLogoJava className="w-40 h-40 text-cyan-500 md:w-40 md:h-40 lg:w-48 lg:h-48" />{" "}
-                Java
-              </div>
             </div>
 
             <h2 className="text-3xl p-10 my-13 dark:text-gray-200 ">
               Front End
             </h2>
             <div className="flex flex-wrap justify-evenly">
-              <div className="p-2 text-xl dark:text-gray-200 ">
-                <BiLogoAngular className="w-40 h-40 text-cyan-500 md:w-40 md:h-40 lg:w-48 lg:h-48" />
-                Angular
-              </div>
               <div className="p-2 text-xl dark:text-gray-200">
                 <BiLogoReact className="w-40 h-40 text-cyan-500 md:w-40 md:h-40 lg:w-48 lg:h-48" />
                 React
@@ -254,10 +252,6 @@ export default function Home() {
 
             <h2 className="text-3xl p-7 dark:text-gray-200">Back End</h2>
             <div className="flex flex-wrap justify-evenly">
-              <div className="p-2 text-xl dark:text-gray-200">
-                <BiLogoSpringBoot className="w-40 h-40 text-cyan-500 md:w-40 md:h-40 lg:w-48 lg:h-48" />{" "}
-                Spring Boot
-              </div>
               <div className="p-2 text-xl dark:text-gray-200">
                 <BiLogoNodejs className="w-40 h-40 text-cyan-500 md:w-40 md:h-40 lg:w-48 lg:h-48" />
                 Node Js
@@ -284,10 +278,6 @@ export default function Home() {
               Other Technologies
             </h2>
             <div className="flex flex-wrap justify-evenly">
-              <div className="p-2 text-xl dark:text-gray-200">
-                <SiApachemaven className="w-40 h-40 text-cyan-500 md:w-40 md:h-40 lg:w-48 lg:h-48 mb-5" />
-                Maven
-              </div>
               <div className="p-2 text-xl dark:text-gray-200">
                 <SiNumpy className="w-40 h-40 text-cyan-500 md:w-40 md:h-40 lg:w-48 lg:h-48 mb-5" />
                 Numpy
@@ -383,7 +373,7 @@ export default function Home() {
                   Technologies I Use
                 </h4>
                 <p className="text=grey-800 py-1">React</p>
-                <p className="text=grey-800 py-1">Spring Boot</p>
+                <p className="text=grey-800 py-1">Javascript</p>
                 <p className="text=grey-800 py-1">MongoDB</p>
                 <p className="text=grey-800 py-1">Express Js</p>
                 <p className="text=grey-800 py-1">Node Js</p>
@@ -408,7 +398,7 @@ export default function Home() {
                 <p className="text=grey-800 py-1">Pandas</p>
                 <p className="text=grey-800 py-1">Numpy</p>
                 <p className="text=grey-800 py-1">Matplotlib</p>
-                <p className="text=grey-800 py-1">Seaborn</p>
+                <p className="text=grey-800 py-1">Sklearn</p>
               </div>
             </div>
 
@@ -426,7 +416,6 @@ export default function Home() {
                 <h4 className="py-4 text-cyan-500 dark:text-gray-300">
                   Technologies I Use
                 </h4>
-                <p className="text=grey-800 py-1">Java</p>
                 <p className="text=grey-800 py-1">GitHub</p>
                 <p className="text=grey-800 py-1">Docker</p>
                 <p className="text=grey-800 py-1">Kubernetes</p>
@@ -438,26 +427,26 @@ export default function Home() {
         </section>
 
         <section className="py-10" id="projects">
-          <div>
-            <h3 className="text-5xl py-2 mb-6 dark:text-white">Portfolio</h3>
-            <p className="text-md py-2 leading-8 text-grey-800 dark:text-gray-200">
+          <div className="py-10">
+            <h3 className="text-5xl py-2 mb-6 dark:text-white font-bold">
+              Portfolio
+            </h3>
+            <p className="text-lg py-2 leading-8 text-gray-800 dark:text-gray-200">
               My portfolio is a collection of diverse work samples that reflect
               my expertise and experience in{" "}
               <span className="text-cyan-500">
-                {" "}
-                Full Stack development and Machine Learning{" "}
-              </span>{" "}
+                Full Stack development and Machine Learning
+              </span>
               . It includes a range of projects, such as{" "}
               <span className="text-cyan-500">
-                {" "}
-                Pizzeria-react-app , FlySmart , Medical Insurance Premium
-                prediction , Intelligent Traffic Managment System, Portfolio
-                Website{" "}
+                React Dashboard for sales tracking, full stack solution for
+                automating daily policy information dispatch, Movie Review App,
+                Ecommerce App, Twitter Sentiment Analysis
               </span>
-              each demonstrating my creativity, problem-solving abilities, and
+              , each demonstrating my creativity, problem-solving abilities, and
               professional growth.
             </p>
-            <p className="text-md py-2 leading-8 text-grey-800 dark:text-gray-200">
+            <p className="text-lg py-2 leading-8 text-gray-800 dark:text-gray-200">
               Through my portfolio, I aim to present the quality of my work and
               provide potential employers, clients, or collaborators with a
               comprehensive understanding of my capabilities. It not only
@@ -483,8 +472,8 @@ export default function Home() {
                   style={portfolioStyle}
                   title="Checkout code on Github"
                 />
-                <div className="absolute inset-0 flex items-center justify-center  opacity-0 hover:opacity-100 transition-opacity duration-300">
-                  <p className="text-xl text-center text-white hover:text-3xl md:text-2xl lg:text-2xl">
+                <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                  <p className="text-xl text-center text-white hover:text-3xl md:text-2xl lg:text-2xl ">
                     Click Me to Checkout Code on Github
                   </p>
                 </div>
@@ -503,8 +492,8 @@ export default function Home() {
                   style={portfolioStyle}
                   title="Checkout code on Github"
                 />
-                <div className="absolute inset-0 flex items-center justify-center  opacity-0 hover:opacity-100 transition-opacity duration-300">
-                  <p className="text-xl text-center text-black mb-32 hover:text-3xl md:text-2xl lg:text-2xl">
+                <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                  <p className="text-xl text-center text-white hover:text-3xl md:text-2xl lg:text-2xl ">
                     Click Me to Checkout Code on Github
                   </p>
                 </div>
@@ -516,16 +505,16 @@ export default function Home() {
                 className="relative"
               >
                 <Image
-                  src={FlySmart}
-                  className="rounded-lg object-cover "
+                  src={estate}
+                  className="rounded-lg object-cover"
                   width={"100%"}
-                  height={"100%"}
+                  height={"2.5%"}
                   style={portfolioStyle}
                   title="Checkout Code on Github"
                 />
                 <div className="absolute inset-0 flex items-center justify-center  opacity-0 hover:opacity-100 transition-opacity duration-300">
-                  <p className="text-xl text-center text-black hover:text-3xl md:text-2xl lg:text-2xl">
-                    Click Me to Checkout Code on Github
+                  <p className="text-xl text-center text-cyan hover:text-3xl md:text-2xl lg:text-2xl">
+                    Coming Soon
                   </p>
                 </div>
               </a>
@@ -553,42 +542,67 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="py-10" id="contact">
-          <h1 className="text-5xl dark:text-gray-200 py-5">Contact Me</h1>
-          <form onSubmit={handleSubmit}>
-            <label htmlFor="name" className="dark:text-gray-200">
-              Name
-            </label>
-            <input
-              type="text"
-              id="name"
-              className="border-2 border-cyan-500 p-2 rounded-lg w-full dark:border-cyan-500 dark:bg-black dark:text-gray-200"
-            />
-            <label htmlFor="email" className="dark:text-gray-200">
-              Email
-            </label>
-            <input
-              type="email"
-              id="email"
-              className="border-2 border-cyan-500 p-2 rounded-lg w-full dark:border-cyan-500 dark:bg-black dark:text-gray-200 "
-            />
-            <label htmlFor="message" className="dark:text-gray-200">
-              Message
-            </label>
-            <textarea
-              name="message"
-              id="message"
-              cols="30"
-              rows="10"
-              className="border-2 border-cyan-500  p-2 py-4 rounded-lg w-full dark:border-cyan-500 dark:bg-black dark:text-gray-200 "
-            ></textarea>
-            <button
-              disabled={state.submitting}
-              className="bg-gradient-to-r from-cyan-700 to-cyan-500  text-white px-4 py-2 rounded-lg"
-            >
-              Submit
-            </button>
-          </form>
+        <section className="py-10 bg-white dark:bg-gray-950">
+          <div className="max-w-4xl mx-auto px-4">
+            <h1 className="text-5xl text-center font-bold text-teal-600 dark:text-gradient-to-r from-cyan-700 to-cyan-500 mb-10">
+              Contact Me
+            </h1>
+            <form onSubmit={handleSubmit} className="flex flex-col space-y-6">
+              <div>
+                <label
+                  htmlFor="name"
+                  className="block text-lg dark:text-gray-200 mb-1"
+                >
+                  Name
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  className="border-2 border-cyan-500 p-3 rounded-lg w-full dark:border-cyan-500 dark:bg-black dark:text-gray-200 focus:outline-none focus:border-cyan-700"
+                  placeholder="Your Name"
+                  required
+                />
+              </div>
+              <div>
+                <label
+                  htmlFor="email"
+                  className="block text-lg dark:text-gray-200 mb-1"
+                >
+                  Email
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  className="border-2 border-cyan-500 p-3 rounded-lg w-full dark:border-cyan-500 dark:bg-black dark:text-gray-200 focus:outline-none focus:border-cyan-700"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
+              <div>
+                <label
+                  htmlFor="message"
+                  className="block text-lg dark:text-gray-200 mb-1"
+                >
+                  Message
+                </label>
+                <textarea
+                  name="message"
+                  id="message"
+                  cols="30"
+                  rows="6"
+                  className="border-2 border-cyan-500 p-3 rounded-lg w-full dark:border-cyan-500 dark:bg-black dark:text-gray-200 focus:outline-none focus:border-cyan-700"
+                  placeholder="Your Message"
+                  required
+                ></textarea>
+              </div>
+              <button
+                disabled={state.submitting}
+                className="bg-gradient-to-r from-cyan-700 to-cyan-500 text-white px-6 py-3 rounded-lg hover:bg-gradient-to-r hover:from-cyan-600 hover:to-cyan-400 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:ring-opacity-50 self-center"
+              >
+                {state.submitting ? "Submitting..." : "Submit"}
+              </button>
+            </form>
+          </div>
         </section>
       </main>
       <Analytics />
