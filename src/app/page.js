@@ -191,18 +191,16 @@ export default function Home() {
                 <AiFillMail />
               </a>
             </div>
-            <div className="flex items-center justify-center text-center mx-auto overflow-hidden">
-              <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-64 h-32 mt-20 overflow-hidden md:h-96 md:w-60 lg:w-96 lg:h-96">
-                <Image src={profile} fill={true} />
-              </div>
-            </div>
           </div>
         </section>
 
         {/* Skills */}
         <div id="skills">
           <div>
-            <h1 className="text-5xl py-3 text-black dark:text-gray-200">
+            <h1
+              className="text-5xl text-center font-bold text-teal-600 dark:text-gradient-to-r from-cyan-700 to-cyan-500 mb-10"
+              align="center"
+            >
               {" "}
               My Skills
             </h1>
@@ -294,7 +292,7 @@ export default function Home() {
 
         <section id="services">
           <div>
-            <h3 className="text-5xl py-3 mb-6 dark:text-white">
+            <h3 className="text-5xl text-center font-bold text-teal-600 dark:text-gradient-to-r from-cyan-700 to-cyan-500 mb-10">
               Services I Offer
             </h3>
             <p className="text-2xl py-2 leading-8 text-grey-800 dark:text-gray-200">
@@ -428,34 +426,44 @@ export default function Home() {
 
         <section className="py-10" id="projects">
           <div className="py-10">
-            <h3 className="text-5xl py-2 mb-6 dark:text-white font-bold">
+            <h3 className="text-5xl text-center font-bold text-teal-600 dark:text-gradient-to-r from-cyan-700 to-cyan-500 mb-10s">
               Portfolio
             </h3>
-            <p className="text-lg py-2 leading-8 text-gray-800 dark:text-gray-200">
-              My portfolio is a collection of diverse work samples that reflect
-              my expertise and experience in{" "}
-              <span className="text-cyan-500">
-                Full Stack development and Machine Learning
-              </span>
-              . It includes a range of projects, such as{" "}
-              <span className="text-cyan-500">
-                React Dashboard for sales tracking, full stack solution for
-                automating daily policy information dispatch, Movie Review App,
-                Ecommerce App, Twitter Sentiment Analysis
-              </span>
-              , each demonstrating my creativity, problem-solving abilities, and
-              professional growth.
-            </p>
-            <p className="text-lg py-2 leading-8 text-gray-800 dark:text-gray-200">
-              Through my portfolio, I aim to present the quality of my work and
-              provide potential employers, clients, or collaborators with a
-              comprehensive understanding of my capabilities. It not only
-              highlights my past achievements but also offers insights into my
-              thought process, approach to projects, and overall professional
-              development. By exploring my portfolio, you will gain a deeper
-              understanding of my skills and be able to assess my suitability
-              for your specific needs.
-            </p>
+            <div>
+              <p className="text-lg py-2 leading-8 text-gray-800 dark:text-gray-200">
+                Welcome to my dynamic portfolio—a showcase of my diverse
+                expertise in
+                <span className="text-cyan-500">
+                  {" "}
+                  Full Stack Development and Machine Learning
+                </span>
+                . Here, you'll discover a captivating array of projects that
+                embody my passion for innovation and problem-solving:
+                <span className="text-cyan-500">
+                  {" "}
+                  React Dashboard for sales tracking, a comprehensive full-stack
+                  solution automating daily policy information dispatch, a
+                  captivating Movie Review App, an engaging E-commerce platform,
+                  and a cutting-edge Twitter Sentiment Analysis tool.
+                </span>
+              </p>
+              <p className="text-lg py-2 leading-8 text-gray-800 dark:text-gray-200">
+                Immerse yourself in my portfolio to experience the fusion of
+                creativity, technical prowess, and relentless drive for
+                excellence. Each project is a testament to my journey of growth,
+                showcasing not only my past accomplishments but also providing
+                valuable insights into my problem-solving methodologies and
+                professional evolution.
+                <br />
+                <br />
+                Whether you're an employer seeking top-tier talent, a client in
+                pursuit of transformative solutions, or a collaborator ready to
+                embark on groundbreaking ventures, my portfolio stands as a
+                testament to my capabilities. Dive in, explore, and witness
+                firsthand the depth of my skills and the potential I bring to
+                the table.
+              </p>
+            </div>  
           </div>
 
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
@@ -500,10 +508,7 @@ export default function Home() {
               </a>
             </div>
             <div className="basis-1/3 flex-1 ">
-              <a
-                href="https://github.com/WebDesgns/Flight-Management-System"
-                className="relative"
-              >
+              <a href="\" className="relative">
                 <Image
                   src={estate}
                   className="rounded-lg object-cover"
