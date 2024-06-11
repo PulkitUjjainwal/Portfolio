@@ -126,7 +126,7 @@ export default function Home() {
               <li>
                 {" "}
                 <a
-                  href="https://drive.google.com/file/d/11mo2ZC5zHVQ9aH0qzvn78b-pGiPgb2ID/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1yD94dPb3gzq2stG_L3waDoJn8GWk8eP2/view?usp=sharing"
                   alt="alt text"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -463,7 +463,7 @@ export default function Home() {
                 firsthand the depth of my skills and the potential I bring to
                 the table.
               </p>
-            </div>  
+            </div>
           </div>
 
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
