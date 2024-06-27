@@ -39,3 +39,101 @@
   src: url('../../public/Dancing_Script/DancingScript-VariableFont_wght.ttf');
 }
 
+.flex-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.card-body {
+  background-color: var(--bg-color);
+  position: relative;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow);
+}
+
+.card-body:hover {
+  box-shadow: var(--hover-shadow);
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.card-description {
+  color: var(--desc-color);
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+}
+
+.card-image {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.card-img {
+  height: 15rem;
+  width: 100%;
+  object-cover: cover;
+  border-radius: 1rem;
+  transition: box-shadow 0.3s ease;
+}
+
+.card-img:hover {
+  box-shadow: var(--img-hover-shadow);
+}
+
+.card-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.25rem;
+}
+
+.try-now,
+.cta-button {
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  font-size: 0.75rem;
+}
+
+.try-now {
+  background: none;
+  color: var(--text-color);
+}
+
+.cta-button {
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  font-weight: bold;
+}
+
+:root {
+  --bg-color: #f9fafb;
+  --border-color: rgba(0, 0, 0, 0.1);
+  --shadow: none;
+  --hover-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  --text-color: #333;
+  --desc-color: #666;
+  --img-hover-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  --button-bg: #000;
+  --button-text: #fff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #000;
+    --border-color: rgba(255, 255, 255, 0.2);
+    --shadow: none;
+    --hover-shadow: 0 0 20px rgba(80, 255, 180, 0.1);
+    --text-color: #fff;
+    --desc-color: #ccc;
+    --img-hover-shadow: 0 0 20px rgba(80, 255, 180, 0.1);
+    --button-bg: #fff;
+    --button-text: #000;
+  }
+}

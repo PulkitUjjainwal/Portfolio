@@ -6,6 +6,8 @@ import Typewriter from "typewriter-effect";
 import { useForm } from "@formspree/react";
 import { Analytics } from "@vercel/analytics/react";
 import { useState } from "react";
+import { CardBody, CardContainer, CardItem } from "../components/ui/3d-card";
+import Link from "next/link";
 
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import {
@@ -49,6 +51,7 @@ import senti from "../../public/senti.png";
 import FlySmart from "../../public/FlySmart2.png";
 import estate from "../../public/real_estate.png";
 // import portfolio from "../../public/Portfolio1.png";
+import image_upload from "../../public/image_upload_preview.jpeg";
 
 const portfolioStyle = {
   layout: "responsive",
@@ -466,83 +469,209 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-            <div className="basis-1/3 flex-1 ">
-              <a
-                href="https://github.com/PulkitUjjainwal/Ecommerce-App---2024-MERN-"
-                className="relative"
-              >
-                <Image
-                  src={ecom}
-                  className="rounded-lg object-cover hover:opacity-50 transition-opacity duration-300"
-                  width={"100%"}
-                  height={"100%"}
-                  style={portfolioStyle}
-                  title="Checkout code on Github"
-                />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
-                  <p className="text-xl text-center text-white hover:text-3xl md:text-2xl lg:text-2xl ">
-                    Click Me to Checkout Code on Github
-                  </p>
-                </div>
-              </a>
+          <div className="flex-container grid-template-columns">
+            <div>
+              <CardContainer className="inter-var">
+                <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+                  <CardItem
+                    translateZ="50"
+                    className="text-xl font-bold text-neutral-600 dark:text-white"
+                  >
+                    Lorem ipsum dolor sit amet.
+                  </CardItem>
+
+                  <CardItem
+                    as="p"
+                    translateZ="60"
+                    className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
+                  >
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Dignissimos, dolore.
+                  </CardItem>
+
+                  <CardItem translateZ="100" className="w-full mt-4">
+                    <Image
+                      src={image_upload}
+                      height="1000"
+                      width="1000"
+                      className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                      alt="thumbnail"
+                    />
+                  </CardItem>
+
+                  <div className="flex justify-between items-center mt-20">
+                    <CardItem
+                      translateZ={20}
+                      as={Link}
+                      href="#"
+                      target="__blank"
+                      className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
+                    >
+                      Try now →
+                    </CardItem>
+                    <CardItem
+                      translateZ={20}
+                      as="button"
+                      className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
+                    >
+                      Lorem, ipsum dolor.
+                    </CardItem>
+                  </div>
+                </CardBody>
+              </CardContainer>
             </div>
-            <div className="basis-1/3 flex-1 ">
-              <a
-                href="https://github.com/PulkitUjjainwal/Movie-Review-App "
-                className="relative"
-              >
-                <Image
-                  src={movie}
-                  className="rounded-lg object-cover "
-                  width={"100%"}
-                  height={"100%"}
-                  style={portfolioStyle}
-                  title="Checkout code on Github"
-                />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
-                  <p className="text-xl text-center text-white hover:text-3xl md:text-2xl lg:text-2xl ">
-                    Click Me to Checkout Code on Github
-                  </p>
-                </div>
-              </a>
+
+            <div>
+              <CardContainer className="inter-var">
+                <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+                  <CardItem
+                    translateZ="50"
+                    className="text-xl font-bold text-neutral-600 dark:text-white"
+                  >
+                    Lorem ipsum dolor sit amet.
+                  </CardItem>
+
+                  <CardItem
+                    as="p"
+                    translateZ="60"
+                    className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
+                  >
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Dignissimos, dolore.
+                  </CardItem>
+
+                  <CardItem translateZ="100" className="w-full mt-4">
+                    <Image
+                      src={image_upload}
+                      height="1000"
+                      width="1000"
+                      className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                      alt="thumbnail"
+                    />
+                  </CardItem>
+
+                  <div className="flex justify-between items-center mt-20">
+                    <CardItem
+                      translateZ={20}
+                      as={Link}
+                      href="#"
+                      target="__blank"
+                      className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
+                    >
+                      Try now →
+                    </CardItem>
+                    <CardItem
+                      translateZ={20}
+                      as="button"
+                      className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
+                    >
+                      Lorem, ipsum dolor.
+                    </CardItem>
+                  </div>
+                </CardBody>
+              </CardContainer>
             </div>
-            <div className="basis-1/3 flex-1 ">
-              <a href="\" className="relative">
-                <Image
-                  src={estate}
-                  className="rounded-lg object-cover"
-                  width={"100%"}
-                  height={"2.5%"}
-                  style={portfolioStyle}
-                  title="Checkout Code on Github"
-                />
-                <div className="absolute inset-0 flex items-center justify-center  opacity-0 hover:opacity-100 transition-opacity duration-300">
-                  <p className="text-xl text-center text-cyan hover:text-3xl md:text-2xl lg:text-2xl">
-                    Coming Soon
-                  </p>
-                </div>
-              </a>
+
+            <div>
+              <CardContainer className="inter-var">
+                <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+                  <CardItem
+                    translateZ="50"
+                    className="text-xl font-bold text-neutral-600 dark:text-white"
+                  >
+                    Lorem ipsum dolor sit amet.
+                  </CardItem>
+
+                  <CardItem
+                    as="p"
+                    translateZ="60"
+                    className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
+                  >
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Dignissimos, dolore.
+                  </CardItem>
+
+                  <CardItem translateZ="100" className="w-full mt-4">
+                    <Image
+                      src={image_upload}
+                      height="1000"
+                      width="1000"
+                      className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                      alt="thumbnail"
+                    />
+                  </CardItem>
+
+                  <div className="flex justify-between items-center mt-20">
+                    <CardItem
+                      translateZ={20}
+                      as={Link}
+                      href="#"
+                      target="__blank"
+                      className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
+                    >
+                      Try now →
+                    </CardItem>
+                    <CardItem
+                      translateZ={20}
+                      as="button"
+                      className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
+                    >
+                      Lorem, ipsum dolor.
+                    </CardItem>
+                  </div>
+                </CardBody>
+              </CardContainer>
             </div>
-            <div className="basis-1/3 flex-1 relative">
-              <a
-                href="https://github.com/PulkitUjjainwal/Movie-Review-App"
-                className="relative opacity-100 hover:opacity-50 transition-opacity duration-150"
-              >
-                <Image
-                  src={senti}
-                  className="rounded-lg object-cover  "
-                  width={"100%"}
-                  height={"100%"}
-                  style={portfolioStyle}
-                  title="Checkout code on Github"
-                />
-              </a>
-              <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
-                <p className="text-xl text-center text-white hover:text-3xl md:text-2xl lg:text-2xl ">
-                  Click Me to Checkout Code on Github
-                </p>
-              </div>
+
+            <div>
+              <CardContainer className="inter-var">
+                <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+                  <CardItem
+                    translateZ="50"
+                    className="text-xl font-bold text-neutral-600 dark:text-white"
+                  >
+                    Lorem ipsum dolor sit amet.
+                  </CardItem>
+
+                  <CardItem
+                    as="p"
+                    translateZ="60"
+                    className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
+                  >
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Dignissimos, dolore.
+                  </CardItem>
+
+                  <CardItem translateZ="100" className="w-full mt-4">
+                    <Image
+                      src={image_upload}
+                      height="1000"
+                      width="1000"
+                      className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                      alt="thumbnail"
+                    />
+                  </CardItem>
+
+                  <div className="flex justify-between items-center mt-20">
+                    <CardItem
+                      translateZ={20}
+                      as={Link}
+                      href="#"
+                      target="__blank"
+                      className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
+                    >
+                      Try now →
+                    </CardItem>
+                    <CardItem
+                      translateZ={20}
+                      as="button"
+                      className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
+                    >
+                      Lorem, ipsum dolor.
+                    </CardItem>
+                  </div>
+                </CardBody>
+              </CardContainer>
             </div>
           </div>
         </section>
@@ -552,7 +681,11 @@ export default function Home() {
             <h1 className="text-5xl text-center font-bold text-teal-600 dark:text-gradient-to-r from-cyan-700 to-cyan-500 mb-10">
               Contact Me
             </h1>
-            <form onSubmit={handleSubmit} className="flex flex-col space-y-6">
+            <form
+              className="flex flex-col space-y-6"
+              action="https://formsubmit.co/pulkitnov2@gmail.com"
+              method="POST"
+            >
               <div>
                 <label
                   htmlFor="name"
