@@ -683,7 +683,7 @@ export default function Home() {
             </h1>
             <form
               className="flex flex-col space-y-6"
-              action="https://formsubmit.co/pulkitnov2@gmail.com"
+              action="https://formsubmit.co/25b7de162e7602202025218b09c47c09"
               method="POST"
             >
               <div>
