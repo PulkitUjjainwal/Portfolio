@@ -695,6 +695,7 @@ export default function Home() {
                 </label>
                 <input
                   type="text"
+                  name="Name"
                   id="name"
                   className="border-2 border-cyan-500 p-3 rounded-lg w-full dark:border-cyan-500 dark:bg-black dark:text-gray-200 focus:outline-none focus:border-cyan-700"
                   placeholder="Your Name"
@@ -710,6 +711,7 @@ export default function Home() {
                 </label>
                 <input
                   type="email"
+                  name="Email"
                   id="email"
                   className="border-2 border-cyan-500 p-3 rounded-lg w-full dark:border-cyan-500 dark:bg-black dark:text-gray-200 focus:outline-none focus:border-cyan-700"
                   placeholder="Your Email"
