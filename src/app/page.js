@@ -17,6 +17,8 @@ import {
   AiFillGithub,
   AiFillMediumSquare,
   AiFillMail,
+  AiFillRobot,
+  AiOutlineClose,
 } from "react-icons/ai";
 import {
   BiLogoReact,
@@ -65,6 +67,7 @@ const scroll = {
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
   const [state, handleSubmit] = useForm("mrgwzblg");
+  const [isChatbotOpen, setIsChatbotOpen] = useState(false);
 
   if (state.succeeded) {
     return (
@@ -167,6 +170,26 @@ export default function Home() {
               diverse project background, I seek to foster innovation and
               contribute positively to the tech community.
             </p>
+
+            {/* AI Chatbot Call-to-Action */}
+            <div className="my-8 p-6 bg-gradient-to-r from-cyan-900 to-cyan-700 dark:from-cyan-800 dark:to-cyan-600 rounded-xl shadow-lg">
+              <div className="flex items-center justify-center gap-3 mb-3">
+                <AiFillRobot className="text-4xl text-white" />
+                <h4 className="text-2xl font-bold text-white">
+                  Chat with My AI Assistant
+                </h4>
+              </div>
+              <p className="text-white text-lg mb-4">
+                Have questions about my work, skills, or projects? My AI-powered chatbot knows everything about me and can answer your questions instantly!
+              </p>
+              <button
+                onClick={() => setIsChatbotOpen(true)}
+                className="bg-white text-cyan-700 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-all transform hover:scale-105 shadow-md"
+              >
+                Start Conversation →
+              </button>
+            </div>
+
             {/* flex justify-center flex-col items-center */}
             <div className="text-5xl flex justify-center flex-row items-center text-gray-600 dark:text-gray-400 md:flex md:gap-10 lg:flex lg:gap-10 ">
               <a
@@ -676,7 +699,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="py-10 bg-white dark:bg-gray-950">
+        <section className="py-10 bg-white dark:bg-gray-950" id="contact">
           <div className="max-w-4xl mx-auto px-4">
             <h1 className="text-5xl text-center font-bold text-teal-600 dark:text-gradient-to-r from-cyan-700 to-cyan-500 mb-10">
               Contact Me
@@ -745,6 +768,109 @@ export default function Home() {
           </div>
         </section>
       </main>
+
+      {/* Floating Chatbot Button */}
+      {!isChatbotOpen && (
+        <button
+          onClick={() => setIsChatbotOpen(true)}
+          className="fixed bottom-8 right-8 bg-gradient-to-r from-cyan-700 to-cyan-500 text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform z-50 flex items-center gap-2 group"
+          aria-label="Open AI Chatbot"
+        >
+          <AiFillRobot className="text-3xl" />
+          <span className="hidden group-hover:inline-block text-sm font-semibold pr-2 whitespace-nowrap">
+            Ask Me Anything
+          </span>
+        </button>
+      )}
+
+      {/* Chatbot Modal */}
+      {isChatbotOpen && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
+          <div className="bg-white dark:bg-gray-900 rounded-2xl shadow-2xl w-full max-w-2xl flex flex-col relative">
+            {/* Header */}
+            <div className="bg-gradient-to-r from-cyan-700 to-cyan-500 p-6 rounded-t-2xl flex items-center justify-between">
+              <div className="flex items-center gap-3">
+                <AiFillRobot className="text-4xl text-white" />
+                <div>
+                  <h3 className="text-2xl font-bold text-white">
+                    Chat with My AI Assistant
+                  </h3>
+                  <p className="text-sm text-gray-100">
+                    Powered by RAG & LangChain
+                  </p>
+                </div>
+              </div>
+              <button
+                onClick={() => setIsChatbotOpen(false)}
+                className="text-white hover:bg-white hover:text-cyan-700 rounded-full p-2 transition-all"
+                aria-label="Close"
+              >
+                <AiOutlineClose className="text-2xl" />
+              </button>
+            </div>
+
+            {/* Content */}
+            <div className="p-8 flex flex-col items-center gap-6">
+              <div className="text-center">
+                <h4 className="text-2xl font-bold text-gray-800 dark:text-white mb-4">
+                  🤖 My AI-Powered Q&A Bot
+                </h4>
+                <p className="text-lg text-gray-700 dark:text-gray-300 mb-6">
+                  I've built an intelligent chatbot that knows everything about my work, skills, projects, and experience. It uses advanced RAG (Retrieval-Augmented Generation) technology to answer your questions accurately.
+                </p>
+
+                <div className="bg-cyan-50 dark:bg-cyan-900/20 rounded-xl p-6 mb-6">
+                  <h5 className="font-semibold text-lg text-cyan-700 dark:text-cyan-300 mb-3">
+                    What You Can Ask:
+                  </h5>
+                  <ul className="text-left text-gray-700 dark:text-gray-300 space-y-2">
+                    <li>💼 My professional experience and skills</li>
+                    <li>🚀 Details about my projects and tech stack</li>
+                    <li>🎓 My educational background and achievements</li>
+                    <li>🛠️ Technologies I work with (React, Python, ML, etc.)</li>
+                    <li>📧 How to contact me or collaborate</li>
+                  </ul>
+                </div>
+
+                <p className="text-sm text-gray-600 dark:text-gray-400 mb-6">
+                  Note: The chatbot opens in a new window on Hugging Face Spaces for the best experience
+                </p>
+              </div>
+
+              <a
+                href="https://huggingface.co/spaces/Pulkit225/AI-Chatbot"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gradient-to-r from-cyan-700 to-cyan-500 text-white px-8 py-4 rounded-lg font-bold text-lg hover:from-cyan-600 hover:to-cyan-400 transition-all transform hover:scale-105 shadow-lg flex items-center gap-3"
+              >
+                <AiFillRobot className="text-2xl" />
+                Open AI Chatbot
+                <span className="text-xl">→</span>
+              </a>
+
+              <div className="flex gap-4 mt-4">
+                <div className="bg-gray-100 dark:bg-gray-800 rounded-lg p-4 flex-1">
+                  <p className="text-sm font-semibold text-gray-700 dark:text-gray-300">
+                    🧠 RAG-Powered
+                  </p>
+                  <p className="text-xs text-gray-600 dark:text-gray-400">
+                    Uses vector embeddings for accurate responses
+                  </p>
+                </div>
+                <div className="bg-gray-100 dark:bg-gray-800 rounded-lg p-4 flex-1">
+                  <p className="text-sm font-semibold text-gray-700 dark:text-gray-300">
+                    ⚡ Instant Answers
+                  </p>
+                  <p className="text-xs text-gray-600 dark:text-gray-400">
+                    Get information about me in seconds
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
       <Analytics />
     </div>
   );
